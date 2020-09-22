@@ -13,9 +13,11 @@ class ActorsController < ApplicationController
 			redirect_to "/actors/new"
 		end
 	end
-
+	def show
+		end
 	private
 	def actor_params
 		params.require(:actor).permit(:first_name, :last_name)
 	end
+
 end
